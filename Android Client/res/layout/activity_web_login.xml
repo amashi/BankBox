@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="right"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/activity_login_welcomeMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFE4E1"
+        android:text="You are being redirected to the Web Login page. Please Login below:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <WebView
+        android:id="@+id/webLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </WebView>
+
+</LinearLayout>

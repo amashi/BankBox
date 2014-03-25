@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_uploadFile"
+          android:title="Upload"
+          android:icon="@drawable/ic_action_upload"
+          android:showAsAction="always" />
+    <item android:id="@+id/action_refresh"
+          android:title="Refresh"
+          android:icon="@drawable/ic_action_refresh"
+          android:showAsAction="always" />
+    <item android:id="@+id/action_user_summary"
+          android:icon="@drawable/ic_action_person"
+          android:title="User Summary"
+          android:showAsAction="always" />
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_settings"
+          android:title="Settings"
+          android:icon="@drawable/ic_action_settings"
+          android:showAsAction="always" />
+</menu>

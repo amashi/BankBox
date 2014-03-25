@@ -1,0 +1,65 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.lior.VVS3Box"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@drawable/app_icon3"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.cto.VVS3Box.activity.MainActivity"
+            android:label="@string/title_activity_login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.cto.VVS3Box.activity.LocalFileBrowserActivity"
+            android:label="Choose File" >
+            <action android:name="org.lior.VVS3Box.activity.LocalFileBrowserActivity" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+        <activity
+            android:name="org.cto.VVS3Box.activity.TestActivity"
+            android:label="Test actions" >
+            <action android:name="org.lior.VVS3Box.activity.TestActivity" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+        <activity
+            android:name="org.cto.VVS3Box.activity.UserSummaryActivity"
+            android:label="User Summary" >
+            <action android:name="org.lior.VVS3Box.activity.UserSummaryActivity" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+        <activity
+            android:name="org.cto.VVS3Box.activity.WebLoginActivity"
+            android:label="Web Login" >
+            <action android:name="org.cto.VVS3Box.activity.WebLoginActivity" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+        <activity
+            android:name="org.cto.VVS3Box.activity.RemoteBrowserActivity"
+           android:screenOrientation="portrait"
+            android:label="Remote Browser" >
+            <action android:name="org.cto.VVS3Box.activity.RemoteBrowserActivity" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+    </application>
+
+</manifest>

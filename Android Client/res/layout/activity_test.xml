@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="..."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btnBrowseLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        android:onClick="cmdBrowseLocal"
+        android:text="Browse Local files"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btnS3Test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:longClickable="false"
+        android:onClick="cmdS3Test"
+        android:text="Test some S3 stuff" />
+
+</LinearLayout>

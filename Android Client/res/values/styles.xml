@@ -1,0 +1,35 @@
+<resources>
+
+    <style name="AppTheme" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/TabTextStyle</item>
+
+    </style> 
+
+    <style name="TransparentListView" parent="@android:style/Widget.ListView">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+    </style>
+
+    <style name="TransparentExpandableListView" parent="@android:style/Widget.ExpandableListView">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+    </style> 
+
+    <!-- general styles for the action bar -->
+    <style name="MyActionBar" parent="@android:style/Widget.ActionBar">
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+
+    </style>
+
+    <!-- action bar title text -->
+    <style name="TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+	<!-- 
+        <item name="android:textColor">@color/actionbar_text</item>  -->
+    </style>
+
+    <!-- action bar tab text -->
+    <style name="TabTextStyle" parent="@android:style/Widget.Holo.ActionBar.TabText">
+        <!-- 
+        <item name="android:textColor">@color/actionbar_text</item> -->
+    </style>
+
+</resources>
