@@ -56,7 +56,7 @@ public class WebLoginActivity extends BaseActivity {
 			}
 
 			// check the cookie each time a page is finished. If the
-			// ‘oauth_token’ cookie is found
+			// ï¿½oauth_tokenï¿½ cookie is found
 			@Override
 			public void onPageFinished(WebView view, String url) {
 				// if the 'simulate login' check was pressed, then bypass the login
@@ -86,7 +86,7 @@ public class WebLoginActivity extends BaseActivity {
 					String[] parts = pairs[i].split("=", 2);
 					// If token is found, return it to the calling activity.
 					if (parts.length == 2
-							&& parts[0].equalsIgnoreCase(authenticationCookieName)) {
+							&& parts[0].trim().equalsIgnoreCase(authenticationCookieName.trim())) {
 						logger.info("login successful");
 						Toast.makeText(getApplicationContext(), "Login successful! redirecting back to application...", Toast.LENGTH_LONG).show();
 						Intent result = new Intent();
