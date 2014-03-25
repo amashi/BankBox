@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Root Context: defines shared resources visible to all other web components -->
+
+	<!--  bean
+		class="org.springframework.security.saml.metadata.ExtendedMetadataDelegate">
+		<constructor-arg>
+			<bean
+				class="org.opensaml.saml2.metadata.provider.FilesystemMetadataProvider">
+				<constructor-arg>
+					<value type="java.io.File">classpath:security/bankboxvirtualbox01snapshot_sp.xml
+					</value>
+				</constructor-arg>
+				<property name="parserPool" ref="parserPool" />
+			</bean>
+		</constructor-arg>
+		<constructor-arg>
+			<bean class="org.springframework.security.saml.metadata.ExtendedMetadata">
+				<property name="local" value="true" />
+				<property name="alias" value="defaultAlias" />
+				<property name="securityProfile" value="metaiop" />
+				<property name="sslSecurityProfile" value="pkix" />
+				<property name="signingKey" value="apollo" />
+				<property name="encryptionKey" value="apollo" />
+				<property name="requireArtifactResolveSigned" value="true" />
+				<property name="requireLogoutRequestSigned" value="true" />
+				<property name="requireLogoutResponseSigned" value="false" />
+				<property name="idpDiscoveryEnabled" value="true" />
+				<property name="idpDiscoveryURL"
+					value="http://localhost:8080/bank/saml/discovery/alias/defaultAlias" />
+				<property name="idpDiscoveryResponseURL"
+					value="http://localhost:8080/bank/saml/login/alias/defaultAlias?disco=true" />
+			</bean>
+		</constructor-arg>
+	</bean -->
+
+	<!--  import resource="classpath:/security/securityContext.xml" / -->
+
+</beans>
