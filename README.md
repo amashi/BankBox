@@ -1,7 +1,7 @@
 BankBox
 =======
 
-Poalim CTO BankBox
+A Virtual Safe Box with SAML2.0 for Federation. 
 
 
 
